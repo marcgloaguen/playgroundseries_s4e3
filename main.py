@@ -14,3 +14,8 @@ def split_data(data: pd.DataFrame, targets_name: list, random_state: int):
     features = data.drop(columns=targets_name)
     targets = data[targets_name]
     return train_test_split(features, targets, 0.2, random_state=random_state)
+
+
+if __name__ == "__main__":
+    train = load_data('train')
+    print(train)
