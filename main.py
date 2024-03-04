@@ -18,4 +18,4 @@ def split_data(data: pd.DataFrame, targets_name: list, random_state: int):
 
 if __name__ == "__main__":
     train = load_data('train')
-    print(train)
+    test = load_data('test')
